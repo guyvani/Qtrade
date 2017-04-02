@@ -16,7 +16,7 @@ class MovingAverageCrossStrategy(Strategy):
     windows are 100/400 periods respectively.
     """
 
-    def __init__(self, bars, events, short_window=100, long_window=400):
+    def __init__(self, bars, events, short_window=10, long_window=40):
         """
         Initialises the buy and hold strategy.
 
@@ -85,7 +85,7 @@ if __name__ == "__main__":
     symbol_list = ['CME']
     initial_capital = 100000.0
     start_date = datetime.datetime(1990,1,1,0,0,0)
-    heartbeat = 0.0
+    heartbeat = 1.0
 
     backtest = Backtest(csv_dir, 
                         symbol_list, 
