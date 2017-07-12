@@ -6,6 +6,25 @@
   Input: list of stock Symbols
 '''
 
+'''
+##Get quote using GoogleFinance
+## first install googlefinance module
+## --> pip install googlefinance
+
+from googlefinance import getQuotes
+import json
+
+#Single symbol quote
+appl_quote = json.dumps(getQuotes('AAPL'), indent=2)
+print(appl_quote)
+
+#multiple Symbols quotes?
+quotes = json.dumps(getQuotes(['AAPL', 'GOOG', 'AMZN']), indent=2)
+print(quotes)
+
+
+
+'''
 
 import sys
 #import types, os, ast, getopt
