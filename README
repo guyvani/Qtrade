@@ -1,1 +1,12 @@
 Project Goal: creare a quantitative trading engine
+
+Updates: Due to issues with yahoo finance 
+         pandas_datareader module failed and since google
+	 does not allow to download certain sylbol data
+	 like S&P 500 :INX, we had to look for fix of 
+	 pandas_datareader to talk to yahoo finance.
+	 this fix is in fix-yahoo-finance module
+	 and all the files and how to use this fix are included
+         in example files here.
+	 Examples on how to Download stock data and save it then read it back
+	 from either Yahoo or Google Finance is also here.
